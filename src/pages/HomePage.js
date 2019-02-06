@@ -17,6 +17,10 @@ export default class Homepage extends React.Component{
         }
         this.mainScreen = this.mainScreen.bind(this);
     }
+    componentDidMount(){
+        document.title ="Boufnichel"
+        window.scrollTo(0,300);
+      }
     render(){
         const {x,y,mobile,scrollY} = this.props.screen;
         return <div style={BgWholeScreen({x:x,y:y,img:Pattern,mobile:mobile,n:2})}>
@@ -24,6 +28,9 @@ export default class Homepage extends React.Component{
                     {
                         this.mainScreen()
                     }
+                </div>
+                <div style={{position:'fixed',bottom:'10px',right:'10px',zIndex:20}}>
+                     ----SCROLL
                 </div>
                 <Slider screen={this.props.screen}>
                     <div>

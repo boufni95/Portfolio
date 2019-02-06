@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './Card';
 export default class CardSlider extends React.Component{
+    
     render(){
         return <div>
                 {React.Children.map(this.props.children,(elem, i)=>{

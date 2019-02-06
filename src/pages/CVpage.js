@@ -56,7 +56,22 @@ export default class CVpage extends React.Component{
             </div>}
             {index === 2 && !zero && <div style={{padding:5}}>
                 <Typography variant='h4' align='center'>
+                    Developpement Web
+                    </Typography>
+            </div>}
+            {index === 3 && !zero && <div style={{padding:5}}>
+                <Typography variant='h4' align='center'>
                     Developpement Jeux Video
+                    </Typography>
+            </div>}
+            {index === 4 && !zero && <div style={{padding:5}}>
+                <Typography variant='h4' align='center'>
+                    Autres Oeuvres
+                    </Typography>
+            </div>}
+            {index === 5 && !zero && <div style={{padding:5}}>
+                <Typography variant='h4' align='center'>
+                    Formation
                     </Typography>
             </div>}
         </div>
@@ -75,6 +90,18 @@ export default class CVpage extends React.Component{
             {index === 2  && !zero &&<div style={{padding:5}}>
                 <Typography variant='h4' align='center'>
                     Autres Oeuvres
+                    </Typography>
+                    
+            </div>}
+            {index === 3  && !zero &&<div style={{padding:5}}>
+                <Typography variant='h4' align='center'>
+                    Formation
+                    </Typography>
+                    
+            </div>}
+            {index === 4  && !zero &&<div style={{padding:5}}>
+                <Typography variant='h4' align='center'>
+                    Compétences
                     </Typography>
                     
             </div>}

@@ -1,12 +1,14 @@
 import React from 'react';
 import {page0} from '../Styles/CvpieceStyles';
-import { Typography,GridList, GridListTile, List, ListItem, ListItemIcon } from '@material-ui/core';
+import { Typography,GridList, GridListTile, List, ListItem, ListItemIcon, ListSubheader, IconButton, Tooltip } from '@material-ui/core';
 import AddrIco from '@material-ui/icons/Room';
 import EmailIco from '@material-ui/icons/Email';
 import PhoneIco from '@material-ui/icons/PhoneIphone';
 import ResICo from '@material-ui/icons/FilterBAndW';
 import DynIco from '@material-ui/icons/BurstMode';
 import BackIco from '@material-ui/icons/CloudQueue';
+import CodeIco from '@material-ui/icons/Code';
+import LaunchIco from '@material-ui/icons/Launch';
 export default class CVpiece extends React.Component{
     render(){
         const pieceStyle={
@@ -97,29 +99,69 @@ export default class CVpiece extends React.Component{
                             </GridListTile>
                             <GridListTile >
                             <List>
+                                
                                 <ListItem>
                                     <ListItemIcon>
-                                        <ResICo/>
+                                        <Tooltip title='Got to site'>
+                                            <IconButton  target="_blank" href="/">
+                                                <LaunchIco/>
+                                            </IconButton>
+                                        </Tooltip>
+                                            
+                                    </ListItemIcon> 
+                                    <ListItemIcon>
+                                        <Tooltip title='Got to code'>
+                                            <IconButton  target="_blank" href="https://github.com/boufni95/Portfolio">
+                                                <CodeIco/>
+                                            </IconButton>
+                                        </Tooltip>
                                     </ListItemIcon>
-                                        <Typography variant='h6'>
-                                        RESPONSIVE
-                                        </Typography>
+                                    <Typography variant='h6' >
+                                        PORTFOLIO
+                                    </Typography>
+                                        
                                 </ListItem>
                                 <ListItem>
                                     <ListItemIcon>
-                                        <DynIco/>
+                                        <Tooltip title='Got to site'>
+                                            <IconButton  target="_blank" href="https://allo.boufnichel.fr/">
+                                                <LaunchIco/>
+                                            </IconButton>
+                                        </Tooltip>
+                                            
+                                    </ListItemIcon> 
+                                    <ListItemIcon>
+                                        <Tooltip title='Got to code'>
+                                            <IconButton  target="_blank" href="https://github.com/boufni95/GeneralPlatform">
+                                                <CodeIco/>
+                                            </IconButton>
+                                        </Tooltip>
                                     </ListItemIcon>
-                                        <Typography variant='h6'  >
-                                        ANIMATED
-                                        </Typography>
+                                    <Typography variant='h6' >
+                                        GENERAL PLATFORM
+                                    </Typography>
+                                        
                                 </ListItem>
                                 <ListItem>
                                     <ListItemIcon>
-                                        <BackIco/>
+                                        <Tooltip title='Got to site'>
+                                            <IconButton  target="_blank" href="https://cssdraw.boufnichel.fr/">
+                                                <LaunchIco/>
+                                            </IconButton>
+                                        </Tooltip>
+                                            
+                                    </ListItemIcon> 
+                                    <ListItemIcon>
+                                        <Tooltip title='Got to code'>
+                                            <IconButton  target="_blank" href="https://github.com/boufni95/cssDraw">
+                                                <CodeIco/>
+                                            </IconButton>
+                                        </Tooltip>
                                     </ListItemIcon>
-                                        <Typography variant='h6'  >
-                                        SERVERLESS Firebase AWS
-                                        </Typography>
+                                    <Typography variant='h6' >
+                                        CSSDRAW
+                                    </Typography>
+                                        
                                 </ListItem>
 
                             </List>
@@ -132,30 +174,163 @@ export default class CVpiece extends React.Component{
                     </div>
                 </div>}
                {this.props.val === 2 && <div>
-                <Typography variant='h3' align='center'>
+                    <Typography variant='h3' align='center'>
                         Developpeur Jeux Video
                     </Typography>
                     <Typography variant='h5' align='center'>
                         Depuis 01/2016
                     </Typography>
                     <div style={{padding:'5%'}}>
-                    <Typography variant='h6' align='center'>
-                    Mon hobby est de développer des jeux vidéo. Depuis que j'ai commencé, j'ai créé
-                    divers jeux mobiles, dont deux que j'ai également publiés sur le store. Au début j'ai
-                    utilisé java avec LibGdx pour créer des jeux 2D simple,puis j'ai commencé à utiliser
-                    unity3D en C# et j'ai commencé à faire des jeux 3D plus complexes Maintenant je
-                    travaille à distance avec un partenaire avec qui je partage mon hobby
-                    </Typography>
+                        <Typography variant='h6' align='center'>
+                            Mon hobby est de développer des jeux vidéo. Depuis que j'ai commencé, j'ai créé
+                            divers jeux mobiles, dont deux que j'ai également publiés sur le store. Au début j'ai
+                            utilisé java avec LibGdx pour créer des jeux 2D simple,puis j'ai commencé à utiliser
+                            unity3D en C# et j'ai commencé à faire des jeux 3D plus complexes Maintenant je
+                            travaille à distance avec un partenaire avec qui je partage mon hobby
+                        </Typography>
                     </div>
                 </div>}
                {this.props.val === 3 && <div>
-               3
+                    <Typography variant='h3' align='center'>
+                        Helpdesk 
+                    </Typography>
+                    <Typography variant='h4' align='center'>
+                        S.A.C.B.O. Bergamo international airport
+                    </Typography>
+                    <Typography variant='h5' align='center'>
+                        06/2016-07/2018
+                    </Typography>
+                    <div style={{padding:'5%'}}>
+                        <Typography variant='h6' align='center'>
+                        Service d'assistance informatique aux employés -
+                        computer,périphériques,imprimantes,réseau Maintenance des systèmes
+                        informatiques -réseau local,Internet,Internet Of Things
+                        </Typography>
+                    </div>
                </div>}
                {this.props.val === 4 && <div>
-               4
+                    <Typography variant='h3' align='center'>
+                        Formation 
+                    </Typography>
+                    <Typography variant='h4' align='center'>
+                        FLE CILEC St.Etienne
+                    </Typography>
+                    <Typography variant='h5' align='center'>
+                        10/2018-12/2018
+                    </Typography>
+                    <Typography variant='body2' align='center'>
+                        2 moins pour aprendre le français
+                    </Typography>
+                    <Typography variant='h4' align='center'>
+                        Università degli studi di Bergamo
+                    </Typography>
+                    <Typography variant='h5' align='center'>
+                        Ingeniéur d'Informatique
+                    </Typography>
+                    <Typography variant='h5' align='center'>
+                        9/2014-2017
+                    </Typography>
+                    <Typography variant='body2' align='center'>
+                        Diplme non obtenu
+                    </Typography>
+                    <Typography variant='h4' align='center'>
+                         ISS Ettore Majorana Seriate
+                    </Typography>
+                    <Typography variant='h5' align='center'>
+                        BAC ou equivalente Informatique
+                    </Typography>
+                    <Typography variant='h5' align='center'>
+                        9/2009-7/2014
+                    </Typography>
                </div>}
                {this.props.val === 5 && <div>
-               5
+                <Typography variant='h3' align='center'>
+                    Compétences 
+                </Typography>
+                <GridList cols={4} cellHeight='auto'>
+                    <GridListTile>
+                        <List>
+                            <ListSubheader>
+                                Langages 
+                            </ListSubheader>
+                            <ListItem>
+                                Javascript
+                            </ListItem>
+                            <ListItem>
+                                C#
+                            </ListItem>
+                            <ListItem>
+                                Java
+                            </ListItem>
+                            <ListItem>
+                                HTML
+                            </ListItem>
+                            <ListItem>
+                                CSS
+                            </ListItem>
+                        </List>
+                    </GridListTile>
+                    <GridListTile>
+                        <List>
+                            <ListSubheader>
+                                Programs & Frameworks
+                            </ListSubheader>
+                            <ListItem>
+                                Unity3D
+                            </ListItem>
+                            <ListItem>
+                                Blender
+                            </ListItem>
+                            <ListItem>
+                                Gimp
+                            </ListItem>
+                            <ListItem>
+                                ReactJs
+                            </ListItem>
+                            <ListItem>
+                                NodeJs
+                            </ListItem>
+                        </List>
+                    </GridListTile>
+                    <GridListTile>
+                        <List>
+                            <ListSubheader>
+                                Langues 
+                            </ListSubheader>
+                            <ListItem>
+                                Italien++++
+                            </ListItem>
+                            <ListItem>
+                                Anglais+++
+                            </ListItem>
+                            <ListItem>
+                                français++
+                            </ListItem>
+                            <ListItem>
+                                Arabe++
+                            </ListItem>
+                        </List>
+                    </GridListTile>
+                    <GridListTile>
+                        <List>
+                            <ListSubheader>
+                                Extra 
+                            </ListSubheader>
+                            <ListItem>
+                            Autonomie
+                            </ListItem>
+                            <ListItem>
+                            Capacité d'adaptation
+                            </ListItem>
+                            <ListItem>
+                            Curiosité
+                            </ListItem>
+                            <ListItem>
+                            Sens de la communication
+                            </ListItem>
+                        </List>
+                    </GridListTile>
+                </GridList>
                </div>}
             </div>
      
